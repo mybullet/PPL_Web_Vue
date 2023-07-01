@@ -1,0 +1,47 @@
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  height: calc(75vh - 80px);
+  width: 1000px;
+  resize: none;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ocrBtn, .dailyBtn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ocrBtn:hover, .dailyBtn:hover {
+  background-color: #3e8e41;
+}
