@@ -19,7 +19,7 @@ const disableButtonForDuration = (buttonElement: HTMLButtonElement, durationInMs
 
 const handleThisBtnClick = (event: MouseEvent) => {
   // Replace the URL with the actual URL to this day log file
-  const url = 'http://localhost:80/test_log/this.log'
+  const url = 'http://192.168.181.132:10000/test_log/this.log'
 
   downloadLog(url)
   disableButtonForDuration(event.target as HTMLButtonElement, 1000) // Disable button for 1 second
@@ -27,7 +27,7 @@ const handleThisBtnClick = (event: MouseEvent) => {
 
 const handleAllBtnClick = (event: MouseEvent) => {
   // Replace the URL with the actual URL to the all log file
-  const url = 'http://localhost:80/test_log/all.log'
+  const url = 'http://192.168.181.132:10000/test_log/all.log'
 
   downloadLog(url)
   disableButtonForDuration(event.target as HTMLButtonElement, 1000) // Disable button for 1 second
@@ -35,7 +35,7 @@ const handleAllBtnClick = (event: MouseEvent) => {
 
 const updateStatusData = () => {
   // Replace the URL with the actual URL to the status data endpoint
-  const url = 'http://localhost:80/realtime'
+  const url = 'http://192.168.181.132:10000/realtime'
 
   fetch(url)
     .then(response => response.text())
